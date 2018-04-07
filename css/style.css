@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333333;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-heading {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0091EA;
+}
+
+.main-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+input {
+  border: 1px solid #BDBDBD;
+  min-height: 1.2rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 3px;
+}
+
+input:focus {
+  outline: 1px solid #80DEEA;
+}
+
+.table {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: separate;
+  border-spacing: 0 1.2rem;
+}
+
+.table .table-row {
+  text-align: center;
+}
+
+.table .table-row td {
+  padding: 0;
+  border-radius: 0;
+  vertical-align: center;
+}
+
+.table .table-row td input {
+  width: 60%;
+  display: inline-block;
+}
+
+.table .table-row .action {
+  text-align: center;
+}
+
+.table th, .table td {
+  padding: 10px;
+}
+
+#grand-total {
+  text-align: center;
+}
+
+button.primary {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button.primary:disabled {
+  background-color: #ccc;
+}
+
+button.danger svg {
+  fill: currentColor;
+}
+
+button.danger {
+  background-color: transparent;
+  border: none;
+  color: #D84315;
+  cursor: pointer;
+  min-height: 1.5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+button.primary:hover {
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+}
+
+#insert-template [contenteditable] {
+  border: 1px solid #ddd;
+  padding-left: 3px;
+  text-align: left;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333; 
+  color: #fff; 
+  text-align: center; 
+  padding: 16px; 
+  position: fixed;
+  z-index: 1;
+  left: 50%; 
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible; 
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s; 
+          animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.print {
+  float: right;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

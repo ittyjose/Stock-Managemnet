@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Billing Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="main-heading">Billing System</h1>
+    <div class="main-fields">
+      <input type="text" name="name" placeholder="Name" id="cust-name" />
+      <input id="date" placeholder="Date" />
+    </div>
+    <table class="table">
+      <thead>
+        <tr class="heading">
+          <th>SL</th>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Total</th>
+          <th>
+            <button class="primary" id="add">Add</button>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="body">
+      </tbody>
+      <tfoot>
+        <td></td>
+        <td></td>
+        <th colspan="2">Grand Total</th>
+        <td id="grand-total">0</td>
+      </tfoot>
+    </table>
+    <button class="primary print" id="print">Print</button>
+  </div>
+  <div id="snackbar"></div>
+  <script src='https://cdn.jsdelivr.net/npm/flatpickr'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
